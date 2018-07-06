@@ -2,12 +2,23 @@
 <html>
 	<head>
 		<meta content="text/html; charset=ISO-8859-1" http-equiv="content-type">
-		<link rel="stylesheet" type="text/css" href="style/style.css" title="style"> <!-- import the CSS -->
-			<title>index</title>
-		</head>
-		<!-- example comment -->
-		<body>
-			<div style="text-align: center;">
-				<h1>WELCOME</h1>the only things here are the ones you find within</div>
-		</body>
-	</html>
+			<link rel="stylesheet" type="text/css" href="style/style.css" title="style">
+				<!-- import the CSS -->
+				<script src="https://code.jquery.com/jquery-1.10.2.js"/>
+				<title>index</title>
+			</head>
+			<!-- example comment -->
+			<body>
+				<div style="text-align: center;">
+					<h1>WELCOME</h1>the only things here are the ones you find within</div>
+				<div id="sidebar"></div>
+				<script>
+				$( "#sidebar" ).load( "resources/sidebar.html #sidebar" );
+				</script>
+				<div id="footer"></div>
+				<script>
+				$( "#footer" ).load( "resources/footer.html #footer" );
+				</script>
+			</body>
+		</html>
+		
